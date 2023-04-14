@@ -37,7 +37,6 @@
 
 
 
-import React from "react";
 import { createStore } from "redux";
 // createStore는 스토어를 만들어주는 함수
 // 리액트 프로젝트에서는 단 하나의 스토어를 생성한다.
@@ -130,4 +129,4 @@ store.dispatch(changeText("4월입니다."));
 store.dispatch(addToList({id: 1, text: "First"}));
 
 window.store = store;
-// window.unsubscribe = unsubscribe;
+window.unsubscribe = unsubscribe;
